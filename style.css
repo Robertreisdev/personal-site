@@ -1,0 +1,104 @@
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+#intro{
+  height: 100vh;
+  background-image: url("assets/fractal.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.diamond{
+    background:rgba(0, 0, 0, 0.2);
+    height:490px;
+    width:490px;
+    -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.unrotated{
+    -moz-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+   
+}
+
+.unrotated h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 12%;
+    margin-left: 4%;
+    width: 100%;
+}
+
+.unrotated h4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 27%;
+    margin-left: -3%;
+    width: 100%;
+}
+
+.skills{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 10%;
+    background: linear-gradient(to top, transparent, 95%, white),url(assets/skills-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px;
+    
+}
+  
+.skills h1{
+    color:rgb(1, 26, 2);
+    text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
+}
+.skill-card{
+    width: 120px;
+    margin: 8% 1%;
+}
+
+.container{
+    background: rgba(38, 219, 210, 0.049);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    border-radius: 15px;
+}
+
+.line{
+    border: 0;
+    height: 1px;
+    background: #1db3a6;
+    width: 100%;
+    margin: 5px auto;
+}
