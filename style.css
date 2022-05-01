@@ -1,8 +1,5 @@
   
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -10,11 +7,14 @@
     .parallax {
       background-attachment: scroll;
     }
+    
 }
+
+
 
 #intro{
   height: 100vh;
-  background-image: url("assets/fractal.gif");
+  background-image: url("assets/bgi.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,10 +25,11 @@
   color:white;
 }
 
+
 .diamond{
     background:rgba(0, 0, 0, 0.2);
-    height:490px;
-    width:490px;
+    min-height:490px;
+    min-width:490px;
     -moz-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -webkit-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     -o-transform: scale(1) rotate(-45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -43,7 +44,6 @@
     -ms-transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     transform: scale(1) rotate(45deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
     text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
-   
 }
 
 .unrotated h1{
@@ -64,22 +64,41 @@
     width: 100%;
 }
 
+.unrotated h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 35%;
+    margin-left: 13%;
+    width: 100%;
+}
+
 .skills{
     text-align: center;
     font-size: 2.5rem;
     padding-top: 10%;
-    background: linear-gradient(to top, transparent, 95%, white),url(assets/skills-background.png);
+    padding-bottom: 10%;
+    background: url(assets/LightSkillsBG.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 100px;
-    
 }
   
-.skills h1{
-    color:rgb(1, 26, 2);
+.skill-headings-light{
+    color:rgb(0, 0, 0);
+    padding-top:2rem;
     text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
+    font-size: 4rem;
+}
+
+.skill-headings-dark{
+    color:rgb(255, 255, 255);
+    padding-top:2rem;
+    font-size: 4rem;
+    text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+            
 }
 .skill-card{
     width: 120px;
@@ -87,7 +106,7 @@
 }
 
 .container{
-    background: rgba(38, 219, 210, 0.049);
+    background: rgba(255, 255, 255, 0.105);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -101,4 +120,135 @@
     background: #1db3a6;
     width: 100%;
     margin: 5px auto;
+    margin-bottom: 3%;
+}
+
+.linkedin-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 35%;
+    margin-left: 17%;
+    width: 100%;
+    color: white;
+}
+
+.linkedin-icon-txt{
+    margin-left:-3%;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0.5s linear,opacity 0.1s linear;
+}
+
+.resume-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 35%;
+    margin-left: 30%;
+    width: 100%;
+}
+
+.resume-icon-txt{
+    margin-left: -3%;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0.5s linear,opacity 0.1s linear;
+}
+
+.github-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 35%;
+    margin-left: 42%;
+    width: 100%;    
+}
+
+.github-icon-txt{
+    margin-left: -1%;
+    visibility: hidden;
+    opacity: 0;
+    transition:visibility 0.5s linear,opacity 0.1s linear;
+}
+
+
+.linkedin-icon:hover .linkedin-icon-txt{
+    visibility: visible;
+    opacity: 1;
+}
+
+.resume-icon:hover .resume-icon-txt{
+    visibility: visible;
+    opacity: 1;
+}
+
+.github-icon:hover .github-icon-txt{
+    visibility: visible;
+    opacity: 1;
+}
+
+.contact-box{
+    margin: 0 auto;
+    width: 65%
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact-box{
+        width: 100%;
+    }
+}
+
+
+.about-me-text{
+    width: 70%;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .about-me-text{
+        width: 100%;
+    }
+}
+
+.hex {
+    margin: 0 auto;
+    margin-bottom: 4%;
+    display: flex;
+    position: relative;
+    width: 240px;
+    height: 265px;
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -moz-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(-90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(0deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+    background-image: url(assets/bl.png);
+    background-size:cover;
+}
+
+
+.dark-card{
+    background-color: #191919;
+    color:white;
+}
+
+.card-header-title{
+    color: inherit;
+}
+
+.ict{
+    color: black;
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1); 
+
 }
