@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-  
-
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
   const cards = Array.prototype.slice.call(document.querySelectorAll('.card'), 0);
@@ -70,12 +68,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-/*
-
-function myFunction() {
-  var element = document.getElementById("about");
-  element.classList.toggle("has-background-black-bis");
-}
-
-*/
