@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0  initial-scale=1.0, maximum-scale=1.0, user-scalable=no" width="100%">
     <title>Rob's Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -34,9 +37,8 @@
             <div class="navbar-end mr-6 is-size-4 has-text-grey-dark">
                 <a href="#intro" class="navbar-item has-text-grey-dark">Home</a>
                 <a href="#about" class="navbar-item has-text-grey-dark">About</a>
-                <a href="#projects" class="navbar-item has-text-grey-dark">Projects</a>
+                <a href="/resume.html" target="_blank" rel="noopener noreferrer" class="navbar-item has-text-grey-dark">CV</a>
                 <a href="#contact" class="navbar-item has-text-grey-dark">Contact</a>
-                <a id="btn" class="navbar-item mt-2 is-size-4 has-text-grey-dark lightdarkbtn"><i id="light-dark-btn" class="fas fa-toggle-off"></i></a>  
             </div>
         </div>
     </nav>
@@ -44,11 +46,11 @@
     
 
     <!-- Intro -->
-    <section id="intro">
+    <section class="" id="intro">
         <div class="diamond">
             <div class="unrotated">
                 <h1 class="title is-size-1 has-text-success-light">Hi I'm Robert!</h1>
-                <h4 class="title is-size-6 has-text-success-light">Software Engineer | Data Analyst | Web Developer</h4>
+                <h4 class="title is-size-6 has-text-success-light">Software Engineer | Backend Developer | AI Enjoyer</h4>
                 
                 <div class="linkedin-icon">
                     <a href="https://www.linkedin.com/in/robertreisdev/"><i class="has-text-success-light fab fa-linkedin fa-2x grow"></i></a>
@@ -56,7 +58,7 @@
                   </div>
                   
                   <div class="resume-icon">
-                    <a href="/resume.html"><i class="has-text-success-light far fa-file fa-2x grow"></i></a>
+                    <a href="/resume.html" target="_blank" rel="noopener noreferrer"><i class="has-text-success-light far fa-file fa-2x grow"></i></a>
                     <h2 class="resume-icon-txt">Resume</h2>
                   </div>
                   
@@ -64,38 +66,47 @@
                     <a href="https://github.com/Robertreisdev"><i class="has-text-success-light fab fa-github fa-2x grow"></i></a>
                     <h2 class="github-icon-txt">Github</h2>
                   </div>
-            </div>
+                </div>
         </div>
-    </section>
-
-
+        <div class="chevron" id="scrollButton">
+            <span><i class="fas fa-chevron-down"></i></span>
+          </div>
+    </section>    
     <!-- About -->
-    <section class="about section light-dark" id="about">
+     
+    <section class="about section light-dark test-grid" id="about">
+        
         <h1 class="is-size-1 has-text-centered mt-6">About me</h1>
-        <hr class="line">
-        <div class="hex"></div>
-       
+        <hr class="line">       
             <div class="about-me-text box mb-5 light-dark">
-                
-                <p class=" has-text-centered light-dark is-size-4-desktop is-size-2-mobile-only">Hi! My name is Robert Reis, and I am currently pursuing a bachelor's in Computer Science. 
-
-                    I have an immense passion for programming, problem solving and life long learning. My main interests include Software Development, Data Science, and Natural Language Processing. 
-                    
-                    Over the last few months, I've been broadening my horizons by learning some new frameworks and languages. 
-                    Lately, I have been focusing on developing my skills in React and Haskell. However, I would love to dive into Vue, Angular, and Scikit-Learn as well. 
-                    So be on the lookout for some projects that include them in the future!
+                <p class="has-text-centered light-dark is-size-3-desktop is-size-3-mobile-only pt-3">&lt;Robert&gt;</p>
+                <p class=" has-text-centered light-dark is-size-4-desktop is-size-3-mobile-only pt-3 ">
+                    I am a Canadian<i class="fab fa-canadian-maple-leaf has-text-danger"></i> Software Engineer who loves building things with code. 
+                    With a degree in Computer Science and years of experience including modernizing the backend of the Bank of Montreal's credit card systems, I have developed a deep appreciation for scalable, enterprise-level software.
+                    I’m always eager to learn new technologies and improve my current skills by taking on projects that push me to be a better developer. 
+                    Whether it’s optimizing existing solutions or creating something entirely new, I enjoy the process of turning ideas into reality.
                 </p>
+                <p class="has-text-centered light-dark is-size-3-desktop is-size-3-mobile-only pt-3">&lt;/Reis&gt;</p>
             </div>
+            
     </section>
 
     <!-- Skills -->
-    <section id="skills"  class="skills">
-        <h1 class="skill-headings-light light-dark-heading">Skills</h1>
-        <div class="container">
+    <section id="skills"  class="skills has-text-white-bis ">
+        <div class="skills-heading-box skill-headings-light">
+            <h1 class="has-text-white-bis">S K I L L S</h1>
+            <hr class="line-white">
+            
+        </div>
+
+        
+        <h1 class="skill-headings-light light-dark-heading has-text-white-bis	">Languages</h1>
+        <h5 class="">Java | JavaScript | Python | C++ | HTML/CSS </h5>
+        <div class="container hidden-div">
             <div class="skill-card grow">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
             </div>
-            <div class="skill-card grow">
+            <div class="skill-card grow" >
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
             </div>
             <div class="skill-card grow">
@@ -112,41 +123,48 @@
             </div>
         </div>
 
-        <h1 class="skill-headings-light light-dark-heading">Framework + Databases</h1>
-        <div class="container">
+        <hr class="thick-line">
+        <h1 class="skill-headings-light light-dark-heading has-text-white-bis	">Frameworks + Databases</h1>
+        <h5 class="">PostgreSQL | Redux | NodeJS | MongoDB | React | Spring Boot | Angular </h5>
+        <div class="container hidden-div">
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" />
             </div>
-            <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+            <div class="skill-card grow">  
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" />
             </div>
             <div class="skill-card grow">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+            </div>
+            <div class="skill-card grow">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain.svg" />
             </div>
         </div>
 
-        <h1 class="skill-headings-light light-dark-heading">Dev Tools</h1>
-        <div class="container">
+        <hr class="thick-line">
+        <h1 class="skill-headings-light light-dark-heading has-text-white-bis	">Dev Tools</h1>
+        <h5 class="">VS Code | AWS | Jira | Intellij | Github | Git </h5>
+        <div class="container hidden-div">
             <div class="skill-card grow">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" />
             </div>
             <div class="skill-card grow">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" />
             </div>
             <div class="skill-card grow">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
@@ -157,386 +175,61 @@
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects light-dark">
-        <h1 class="has-text-centered light-dark is-size-1 pt-6">Projects</h1>
-        <hr class="line">
-        <div class="columns is-multiline is-centered pt-6">
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            DailyPlanner
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        A web app with a clean focused design allowing users to plan their day while viewing the forecast for any city in the world. Made with the MERN tech stack.
-                        <br><br>
-                        <span class="button is-primary">MongoDB</span>
-                        <span class="button is-primary">ExpressJS</span>
-                        <span class="button is-primary">React </span>
-                        <span class="button is-primary">NodeJS</span>
-                        
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/DailyPlanner" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            SortingAlgorithmVisualizer
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        An easy to use visualizer for some common sorting algorithms. Built with the Pygame module.
-                        <br><br><br>
-                        <span class="button is-primary">Python </span>
-                        <span class="button is-primary">Pygame</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/SortingAlgorithmVisualizer" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            RetailStoreSystemManager
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        A comprehensive system manager for keeping track of inventory, transactions, as well as employees records using an Oracle SQL database with Python UI.
-                        <br><br>
-                        <span class="button is-primary">Oracle SQL</span>
-                        <span class="button is-primary">Python</span>
-                        <span class="button is-primary">Tkinter</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/RetailStoreSystemManager" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            Personal Website
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        My personal website used to display past and upcoming projects, as well as let people get to know me a bit better. Hope you are enjoying it!
-                        <br><br>
-                        <span class="button is-primary">HTML</span>
-                        <span class="button is-primary">CSS</span>
-                        <span class="button is-primary">JavaScript</span>
-                        <span class="button is-primary">Bulma</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/personal-site" class="card-footer-item">GitHub</a>
-                        <a href="https://robertreis.ca/" class="card-footer-item">Demo</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            Cli Stock Portfolio 
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        A simple user-friendly CLI tool to create and manage your stock portfolio. Allowing users to track gains and losses when selling stocks and check current pricing.
-                        <br><br>
-                        <span class="button is-primary">Python </span>
-                        <span class="button is-primary">Sqlite3</span>
-                        <span class="button is-primary">IEX API</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/cli-stock-portfolio" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            Job Search Tracker
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        A clean easy to use webapp for tracking your journey in the wild world of job hunting. Made possible with the MERN stack.
-                        <br><br>
-                        <span class="button is-primary">MongoDB</span>
-                        <span class="button is-primary">ExpressJS</span>
-                        <span class="button is-primary">React </span>
-                        <span class="button is-primary">NodeJS</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://github.com/Robertreisdev/job-search-tracker" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            Leetcode Solutions
-                        </p>
-                    </header>
-                    <div class="card-content ">
-                        My ever growing collection of LeetCode solutions. Primarily in Python for now but I am looking to expand solutions to JavaScript and C++ as well. 
-                        <br><br>
-                        <span class="button is-primary">Python</span>
-                    </div>
-                    <footer class="card-footer ">
-                        <a href="https://github.com/Robertreisdev/leetcode-solutions" class="card-footer-item">GitHub</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            P∷𝙹⋮ᒷᓵℸ ̣  c𝙹ᒲ╎リ⊣ ᓭ𝙹𝙹リ
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        Coming Soon!
-                        <br><br>
-                        <br><br>
-                        <span class="button is-primary">C++</span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="#" class="card-footer-item">GitHub</a>
-                        <a href="#" class="card-footer-item">Demo</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd mx-1">
-                <div class="card grow">
-                    <header class="card-header">
-                        <p class="card-header-title pl-5">
-                            P∷𝙹⋮ᒷᓵℸ ̣  c𝙹ᒲ╎リ⊣ ᓭ𝙹𝙹リ
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        Coming Soon!
-                        <br><br>
-                        <br><br>
-                        <span class="button is-loading is-primary"></span>
-                        <span class="button is-primary">React </span>
-                        <span class="button is-loading is-primary"></span>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="#" class="card-footer-item">GitHub</a>
-                        <a href="#" class="card-footer-item">Demo</a>
-                    </footer>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications -->
-    <section class="section light-dark">
-        <h1 class="has-text-centered is-size-2">Certifications</h1>
-        <hr class="line">
-        <div class="columns is-multiline is-centered">
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Complete 2022 Web Development</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-ebcd6dda-6c5c</p>
-                        <p>Presented by: Udemy (Dr.Angela Yu)</p>
-                        
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-ebcd6dda-6c5c-45d8-9d50-c0d7eadf234b/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">SQL using MySQL and Database Design</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-fbb9a243-0816</p>
-                        <p>Presented by: Udemy (Tim Buchalka)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-fbb9a243-0816-4b03-ba57-b83547dad256/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Java Masterclass, Java 11 & Java 17</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-01052c4a-26b5</p>
-                        <p>Presented by: Udemy (Tim Buchalka)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-01052c4a-26b5-49e3-8b92-8415de870035/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">C++ Programming, Deep Dive in C++</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification: ID UC-74e2cb04-4e35</p>
-                        <p>Presented by: (Abdul Bari)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-74e2cb04-4e35-4333-bcc8-b37a12c3150f/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Complete 2022 Oracle SQL Bootcamp</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-fc61f527-48c8</p>
-                        <p>Presented by: Udemy</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-fc61f527-48c8-4158-8307-43bc3ab5d1fe/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Data Structures & Algorithms using C and C++</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID UC-78e57265-1a44</p>
-                        <p>Presented by: Udemy (Abdul Bar)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-78e57265-1a44-43a9-bbbe-59a37825c3b7/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Django Web Development</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-a8a0a892-305c</p>
-                        <p>Presented by: Udemy: (John Elder)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-a8a0a892-305c-49f0-9670-0e765640eb18/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            <div class="column is-full-mobile is-three-quarters-tablet is-half-desktop is-half-widescreen is-one-quarter-fullhd">
-                <div class="card ">
-                    <header class="card-header">
-                        <p class="card-header-title ml-2">Bash Scripting and Shell Programming</p>
-                    </header>
-                    <div class="card-content">
-                        <p>Certification ID: UC-82ab62f6-6e28</p>
-                        <p>Presented by: Udemy (Jason Cannon)</p>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="https://www.udemy.com/certificate/UC-82ab62f6-6e28-44d3-853a-5d68188e4bd1/" class="card-footer-item">Certificate</a>
-                    </footer>
-                </div>
-            </div>
-
-            
-        </div>
-    </section>
-
     <!-- Contact -->
-  <section class="contact section light-dark" id="contact">
-     
-    <h1 class="is-size-2 light-dark has-text-centered">I'd Love to Connect!</h1>  
-    <hr class="line">
-    <div class="contact-icons columns is-multiline is-centered mt-6">
-        <div class="column is-full-mobile is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd has-text-centered mt-6">
-            <a><i class=" has-text-grey-light fas fa-map-marker-alt fa-4x"></i>
-            <h3 class="light-dark is-size-5 ict">Find me @</h3>
-            <p class="light-dark is-size-5 ict">Toronto,Ont</p></a></div>
-        <div class="column is-full-mobile is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd has-text-centered mt-6">
-            <a href="mailto:robertreisdev@gmail.com"><i class="has-text-grey-light far fa-envelope fa-4x"></i>
-            <h3 class="light-dark is-size-5 ict">Email me @</h3>
-            <p class="light-dark is-size-5 ict">robertreisdev@gmail.com</p></a></div>
-        <div class="column is-full-mobile is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd has-text-centered mt-6">
-            <a href="https://www.linkedin.com/in/robert-reis22"><i class="has-text-grey-light fab fa-linkedin-in fa-4x"></i>
-            <h3 class="light-dark is-size-5 ict">Connect with me @</h3>
-            <p class="light-dark is-size-5 ict">robert-reis22</p></a>
+    <section class="contact section light-dark" id="contact">
+        <h1 class="is-size-2 light-dark has-text-centered has-text-weight-bold">I'd Love to Connect!</h1>  
+        <hr class="line">
+        <div class="contact-icons columns is-multiline is-centered mt-6">
+            <div class="column is-full-mobile is-one-third-tablet is-one-third-desktop is-one-third-widescreen is-one-third-fullhd has-text-centered mt-6">
+                <a><i class="mailcon far fa-envelope fa-4x"></i>
+            </div>
         </div>
-      </div>
-    </div>
-
+    
         <form class="form contact-box box px-6 py-6 mt-6 card" action="https://getform.io/f/6afb8247-e147-475d-aacb-0f227b499275" method="post" name="contact-form">
             <div class="columns is-multiline is-centered">
-        
-
-                <div class="field column is-full ">
+                <div class="field column is-full">
                     <label class="label">Name</label>
                     <div class="control">
-                      <input class="input is-primary light-dark has-text-grey-dark" name="Name" type="text" placeholder="Name">
+                        <input class="input light-dark has-text-grey-dark off-grey" name="Name" type="text" placeholder="Name">
                     </div>
                 </div>
-                  
-                  <div class="field column is-full">
+                <div class="field column is-full">
                     <label class="label">Email</label>
-                    <div class="control ">
-                      <input class="input is-primary light-dark has-text-grey-dark" name="Email" type="email" placeholder="Email">
+                    <div class="control">
+                        <input class="input light-dark has-text-grey-dark off-grey" name="Email" type="email" placeholder="Email">
                     </div>
-                  </div>
-                  <div class="field column is-full">
+                </div>
+                <div class="field column is-full">
                     <label class="label">Message</label>
-                    <div class="control ">
-                      <textarea class="input textarea is-primary light-dark has-text-grey-dark" name="Message" maxlength="511" placeholder="Message"></textarea>
+                    <div class="control">
+                        <textarea class="textarea light-dark has-text-grey-dark off-grey" name="Message" maxlength="511" placeholder="Message"></textarea>
                     </div>
-                  </div>
-                  <button class="button is-primary" type="submit">Send Message</button>
+                </div>
+                <button class="button has-text-weight-bold off-grey" type="submit">Send Message</button>
             </div>
         </form>
-
-
-    <br>
-    <footer class="is-size-2 has-text-centered pt-6">
-        <p class="">Created + Designed</p>
-           Robert Reis
-      </footer>
+        <div class="has-text-centered" id="scrollToTop">
+            <span class="icon-wrapper">
+                <i class="fas fa-chevron-up bottom-chevron"></i>
+            </span>
+        </div>
+        
     </section>
+    
+    <section class="footer section">
+        <footer class="is-size-2 has-text-centered pt-6">
 
-
+            <p class="has-text-white-bis">Robert Reis 2024</p>
+                <div class="footer-icons">
+                    <a href="https://www.linkedin.com/in/robertreisdev/" target="_blank"><i class="has-text-white-bis fab fa-linkedin fa-1x grow"></i></a>              
+                    <a href="/resume.html" target="_blank"><i class=" has-text-white-bis far fa-file fa-1x grow"></i></a>
+                    <a href="https://github.com/Robertreisdev" target="_blank"><i class=" has-text-white-bis fab fa-github fa-1x grow"></i></a>
+                </div>
+                
+        </footer>
+    </section>
+    
+    
     <script src="index.js"></script>
 </body>
 
